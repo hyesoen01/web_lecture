@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input/> + <input/> = <input/>
+    </div>
+    <div>
+        <button > submit </button>
+    </div>
+
+    <script>
+        var inpNum1= document.getElementById("inp-num1")
+        var inpNum2= document.getElementById("inp-num2")
+        var inpOut = document.getElementById("inp-out")
+        var btnPlus = document.getElementById("btn-plus")
+
+        btnPlus.addEventListener('click', ()=>{
+            var num1= parseInt(inpNum1.value)
+            var num2= parseInt(inpNum2.value)
+
+            console.log(num1+num2)
+
+            inpOut.value=num1+num2
+
+        })
+    </script>
+
+    <div>
+        <input/> - <input/> = <input/>
+    </div>
+    <div>
+        <button> submit </button>
+    </div>
+    <script>
+        var inpNum3=document.getElementById("inp-num1")
+        var inpNum4=document.getElementById("inp-num2")
+        var inpOut=document.getElementById("inp-out")
+        var btnMin=document.getElementById("btn-min")
+
+        btnMin.addEventListener('click', ()=>{
+            var num3=parseInt(inpNum1.value)
+            var num4=parseInt(inpNum2.value)
+
+            console.log(num3-num4)
+
+            inpOut.value= num3-num4
+        })
+    </script>
+
+    
+
+
+
+</body>
+</html>
