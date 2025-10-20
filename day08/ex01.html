@@ -52,9 +52,17 @@
         })
     </script>
 
-    
+    <h1 id="counter-ouput"> counter : 0</h1>
+    <button id="btn-reset"> Reset </button>
 
+    <script>
+        var CounterOutput = document.getElementById("counter-output")
+        var btnReset = document.getElementById("btn-reset")
+        var counter = 0
 
-
+        btnReset.addEventListener('click', ()=>{
+            console.log('reset')
+        })
+    </script>
 </body>
 </html>
